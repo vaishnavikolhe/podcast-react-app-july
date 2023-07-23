@@ -1,0 +1,52 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.links a{
+    color: #8ea6bb;
+    text-decoration: none;
+}
+.links a:hover{
+    color: var(--white);
+    transition: all 0.3s;
+}
+.active{
+    color: var(--white) !important;
+}
+.gradient{
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    background-color: var(--blue);
+    filter: blur(100px);
+    z-index: -1;
+    top: -120px;
+}
+.logoutLink{
+    color: #8ea6bb !important;
+}
+@media (max-width: 600px){
+    .navbar{
+        margin-left: -25px;
+        margin-right: 2px;
+        max-width: 100vw;
+        width: 100vw;
+        flex-wrap: wrap;
+    } 
+    .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.0rem;
+        flex-wrap: wrap;
+    }
+}
